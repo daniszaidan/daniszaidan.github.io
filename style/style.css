@@ -549,6 +549,9 @@
 	}
 }
 @media screen and (max-width: 800px){
+	section{
+		height: 90% !important;
+	}
 	.intro{
 		width: 100%;
 		margin: 50px;
@@ -605,7 +608,7 @@
 		width: 100%;
 	}
 	.fp-controlArrow{
-		top: 85% !important;
+		top: 80% !important;
 	}
 	.visit{
 		right: 50%;
