@@ -5,7 +5,7 @@
 	font-family: 'Lato', sans-serif;
 }
 .section:nth-child(1){
-	background-image: linear-gradient(150deg, #f2f2f2 0%, #eaeaea 30%, #999999 100%);
+	background-color: #eee;
 }
 .section:nth-child(2){
 	background-image: linear-gradient(150deg, #f2f2f2 0%, #eaeaea 30%, #999999 100%);
