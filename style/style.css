@@ -2,12 +2,11 @@
 	box-sizing: border-box;
 	padding: 0;
 	margin: 0;
-	font-family: 'Lato', sans-serif;
+	font-family: lato;
+	/*border: 1px solid black;*/
 }
 .section:nth-child(1){
-	background-color: #eee;
-	width: 100%;
-	height: 100vh;
+	
 }
 .section:nth-child(2){
 	background-image: linear-gradient(150deg, #f2f2f2 0%, #eaeaea 30%, #999999 100%);
@@ -16,11 +15,7 @@
 	background-image: linear-gradient(150deg, #7e9ece 0%, #243b5e 100%);
 }
 .section:nth-child(4){
-	background-image: linear-gradient(150deg, #999999 0%, #737373 100%);
-}
-.section:nth-child(4) h1{
-	text-align: center;
-	color: white;
+	background-image: linear-gradient(150deg, #808080 0%, #1a1a1a 100%);
 }
 .bg4{
 	width: 100%;
@@ -449,7 +444,6 @@
 	position: absolute;
 	top: 0;
 	right: 0;
-	background: blue;
 	transition: width 1s;
 	z-index: 2;
 }
@@ -458,7 +452,7 @@
 	z-index: 3;
 }
 .right-skill:hover + .left-skill{
-	width: 40%;
+	width: 40% !important;
 }
 .my-skill{
 	position: absolute;
@@ -515,6 +509,7 @@
 	display: flex;
 	justify-content: center;
 	align-items: center;
+	transition: all .5s;
 }
 .foto{
 	width: 60%;
@@ -539,6 +534,7 @@
 	width: 60%;
 	height: 90%;
 	float: left;
+	transition: all .5s;
 }
 .about{
 	width: 80%;
@@ -564,10 +560,17 @@
 	width: 60px;
 	margin-right: 15px;
 	float: left;
+	display: flex;
+	justify-content: center;
+	align-items: center;
 }
-.sosmed .sosmed-app a, .sosmed .sosmed-app a img{
+.sosmed .sosmed-app a img{
 	width: 100%;
 	height: 100%;
+}
+.sosmed-app:nth-child(1) a img{
+	width: calc(100% + 10px);
+	height: calc(100% + 10px);
 }
 footer{
 	width: 100%;
@@ -622,15 +625,12 @@ footer p{
 	}
 }
 @media screen and (max-width: 800px){
-	section{
-		height: 90% !important;
-	}
 	.intro{
 		width: 100%;
 		margin: 50px;
 	}
 	.intro h1{
-		font-size: 40pt;
+		font-size: 50pt;
 	}
 	.intro p{
 		font-size: 15pt;
@@ -641,6 +641,9 @@ footer p{
 	}
 	.scroll-down-wrap{
 		margin-bottom: 10px;
+	}
+	.detail-project .tag a:nth-child(1){
+		margin-left: 0px;
 	}
 	.marbot{
 		margin-bottom: 5vh;
@@ -666,6 +669,9 @@ footer p{
 	.dark-left{
 		padding: 30px 30px;	
 	}
+	.dark-right{
+		padding-top: 100px;
+	}
 	.left-skill:hover{
 		width: 100%;
 		z-index: 3;
@@ -680,14 +686,65 @@ footer p{
 	.right-skill:hover + .left-skill{
 		width: 100%;
 	}
+	.skill{
+		width: 100%;
+		margin: 10px 0;
+		/*margin-bottom: 20px;*/
+	}
+	.skill h5{
+		font-size: 10pt;
+	}
+	.skill span{
+		font-size: 10pt;
+		margin-bottom: 10px;
+	}
+
 	.fp-controlArrow{
-		top: 80% !important;
+		top: 85% !important;
 	}
 	.visit{
 		right: 50%;
 		transform: translateX(50%);
 		margin: 20px 0;
 	}
+	.left-about{
+		width: 100%;
+		height: 60%;
+	}
+	.foto{
+		width: 70%;
+		height: 80%;
+		margin-left: 0% !important;
+	}
+	.foto img{
+		width: 100%;
+		height: auto;
+		position: absolute;
+	}
+	.right-about{
+		width: 100%;
+		height: 40%;
+		margin-left: 0px !important;
+	}
+	.about{
+		width: 70%;
+		top: 5%;
+		left: 50%;
+		transform: translate(-50%, -0%);
+	}
+	.sosmed{
+		width: 100%;
+		margin-top: 30px;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+	}
+	.sosmed .sosmed-app{
+		height: 40px;
+		width: 40px;
+		margin-right: 10px;
+	}
+
 }
 @media screen and (max-width: 700px){
 	.detail-project{
@@ -708,6 +765,28 @@ footer p{
 	.detail-project{
 		height: 45vh;
 		bottom: 5%;
+	}
+
+	.left-about{
+		height: 50%;
+	}
+	.right-about{
+		height: 50%;
+	}
+	.about{
+		left: 50%;
+	}
+	.sosmed{
+		width: 100%;
+		margin-top: 30px;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+	}
+	.sosmed .sosmed-app{
+		height: 35px;
+		width: 35px;
+		margin-right: 10px;
 	}
 }
 @media screen and (max-width: 500px){
