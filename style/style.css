@@ -5,6 +5,34 @@
 	font-family: lato;
 	/*border: 1px solid black;*/
 }
+
+.modal-maintenance{
+	width: 90%;
+	height: 90vh;
+	position: fixed;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	z-index: 999;
+	background: url(../img/maintenance.jpg) no-repeat 100%;
+	background-size: cover;
+	background-position: top center;
+	position: relative;
+	border-radius: 10px;
+	box-shadow: 1px 1px 50px 0 rgba(0,0,0,.3);
+}
+.close-modal-maintenance{
+	position: absolute;
+	right: 0;
+	top: 0;
+	margin: 15px;
+	background: red;
+	padding: 5px;
+	border-radius: 50%;
+	color: white;
+	cursor: pointer;
+}
+
 .section:nth-child(1){
 	
 }
