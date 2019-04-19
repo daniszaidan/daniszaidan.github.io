@@ -155,7 +155,7 @@ table{
 	position: relative;
 	z-index: 2;
 	transition: all .5s;
-	font-weight: 600;
+	font-weight: 500;
 }
 .specializing p{
 	font-weight: 400;
@@ -435,7 +435,7 @@ button .ripple {
 }
 .about-me h1{
 	font-size: 20px;
-	font-weight: 600;
+	font-weight: 500;
 }
 .about-me p{
 	font-size: 15px;
@@ -485,7 +485,7 @@ footer p span{
 	top: 15%;
 }
 #project-section-one .home-link p{
-	font-weight: 600;
+	font-weight: 500;
 	color: #189ad3;
 	font-size: 1.5rem;
 	font-family: 'Poppins', 'Roboto', sans-serif;
@@ -538,7 +538,7 @@ footer p span{
 	margin-top: 100px;
 }
 .project-description h1{
-	font-weight: 600;
+	font-weight: 500;
 	font-size: .9rem;
 	margin-bottom: 10px;
 }
@@ -560,7 +560,7 @@ ul li {
 ul li .project_title {
     display: block;
     font-size: 16px;
-	font-weight: 600;
+	font-weight: 500;
 	font-size: .9rem;
 }
 ul li .project_value {
@@ -589,7 +589,7 @@ ul li .project_value i{
 }
 .project-screenshot h1{
 	font-size: 16px;
-	font-weight: 600;
+	font-weight: 500;
 	font-size: .9rem;
 	margin-bottom: 20px;
 }
