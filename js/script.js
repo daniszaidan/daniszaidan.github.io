@@ -2,15 +2,15 @@ var buttons = document.getElementsByTagName('button');
 Array.prototype.forEach.call(buttons, function (b) {
     b.addEventListener('click', createRipple);
 });
-function createRipple (e) {
+function createRipple(e) {
     var circle = document.createElement('div');
     this.appendChild(circle);
     var d = Math.max(this.clientWidth, this.clientHeight);
     circle.style.width = circle.style.height = d + 'px';
 
     var rect = this.getBoundingClientRect();
-    circle.style.left = e.clientX - rect.left -d/2 + 'px';
-    circle.style.top = e.clientY - rect.top - d/2 + 'px';
+    circle.style.left = e.clientX - rect.left - d / 2 + 'px';
+    circle.style.top = e.clientY - rect.top - d / 2 + 'px';
 
     circle.classList.add('ripple');
 }
@@ -38,7 +38,7 @@ function createRipple (e) {
 // }
 
 function changeCategory(obj, category) {
-    switch(category) {
+    switch (category) {
         case "all":
             $(".portfolio").hide();
             $(".portfolio").show();
@@ -81,3 +81,20 @@ function changeCategory(obj, category) {
     $("." + buttonType[1] + "").addClass("active");
 
 }
+
+
+setTimeout(function () {
+    $(".alert-box").css({
+        "top": "5%"
+    });
+}, 2000);
+setTimeout(function () {
+    $(".alert-box").css({
+        "top": "-99%"
+    });
+}, 10000);
+$(".alert-close").click(function () {
+    $(".alert-box").css({
+        "top": "-99%"
+    });
+})
