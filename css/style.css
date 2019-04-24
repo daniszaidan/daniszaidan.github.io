@@ -133,6 +133,7 @@ table{
 	align-items: center;
 	position: relative;
 	float: left;
+	z-index: 1;
 }
 .specializing{
 	z-index: 2;
@@ -146,6 +147,9 @@ table{
 	transition: all .5s;
 	font-weight: 500;
 } */
+.projectializing{
+	z-index: 2;
+}
 .projectializing .code{
 	font-weight: 400;
 }
@@ -578,7 +582,7 @@ ul li .project_value i{
 }
 .project-screenshot{
 	padding-right: 50px;
-	margin-bottom: 20px;
+	margin-bottom: 30px;
 }
 .project-screenshot .card{
 	height: auto;
