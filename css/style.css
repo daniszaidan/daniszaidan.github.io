@@ -767,6 +767,9 @@ ul li .project_value i{
 	.about-me{
 		margin-top: 30px;
 	}
+	.intro{
+		 top: 45%;
+	}
 	.intro-logo {
 		right: 10%;
 		opacity: 0.2;
