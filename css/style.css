@@ -770,8 +770,11 @@ ul li .project_value i{
 	.intro{
 		 top: 45%;
 	}
+	.intro h1{
+		font-size: 2.9em;
+	}
 	.intro-logo {
-		right: 10%;
+		right: 15%;
 		opacity: 0.2;
 	}
 
