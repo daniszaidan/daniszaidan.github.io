@@ -769,6 +769,7 @@ ul li .project_value i{
 	}
 	.intro-logo {
 		right: 10%;
+		opacity: 0.2;
 	}
 
 }
