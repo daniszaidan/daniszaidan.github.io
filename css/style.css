@@ -180,6 +180,7 @@ table{
 	justify-content: center;
 	align-items: center;
 	margin: 1em;
+	padding: 10%;
 	/* width: 200px; */
 }
 .specializing-frame .card p{
@@ -759,6 +760,9 @@ ul li .project_value i{
 	}
 	.specializing-frame .card{
 		margin: .5em;
+	}
+	.specializing-frame .card p{
+		text-align: center;
 	}
 	.profile-image img{
 		width: auto;
