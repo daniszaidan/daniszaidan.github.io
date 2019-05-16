@@ -360,7 +360,8 @@ button .ripple {
 
 #section-four{
 	width: 100%;
-	height: 75vh;
+	height: auto;
+	padding-top: 50px;
 	background-color: #F8F8F8;
 	position: relative;
 }
@@ -375,12 +376,14 @@ button .ripple {
 	margin: 70px auto 0 auto;
 }
 .hire div[class*="col"]{
-	height: 100%;
+	/* height: 100%;
 	display: flex;
 	align-items: center;
+	justify-content: center; */
 }
 .hire-me{
-	justify-content: center;
+	/* justify-content: center; */
+	height: 100%;
 }
 .hire-me a div.button{
 	float: left;
@@ -391,20 +394,34 @@ button .ripple {
 .hire-me a div.button i{
 	margin-right: 5px;
 }
+.button-frame{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 100%;
+}
+.hire-title{
+	display: flex;
+	justify-content: center;
+	padding: 10px;
+	padding-left: 30px;
+	height: 100%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
 .hire-title h1{
-	margin-left: 50px;
+	text-align: left;
 	font-weight: 500;
 	font-size: 17px;
 }
 .button-cv{
 	background-color: #6a94e2;
 	color: white;
-	margin-right: 20px;
 }
 .button-cv:hover{
 	background-color: #3f75d9;
 	color: white;
-	margin-right: 20px;
 }
 .button-hire{
 	background-color: #74B087;
@@ -416,7 +433,7 @@ button .ripple {
 }
 
 .about{
-	margin-top: 150px;
+	/* margin-top: 150px; */
 	width: 100%;
 	height: 150px;
 }
@@ -470,10 +487,12 @@ button .ripple {
 	color: #a3bded;
 }
 footer{
-	position: absolute;
-	bottom: 0;
-	left: 50%;
-	transform: translateX(-50%);
+	position: relative; 
+	margin-top: 150px; 
+	padding-bottom: 50px;
+}
+footer p{
+	text-align: center;
 }
 footer p span{
 	font-weight: 400;
@@ -606,6 +625,15 @@ ul li .project_value i{
 	height: 80vh;
 }
 
+#button-frame-cv{
+		justify-content: flex-end;
+		padding-right: 10px;
+	}
+	#button-frame-email{
+		justify-content: flex-start;
+		padding-left: 10px;
+	}
+
 /*Tablet (Smaller 800px)*/
 @media (max-width: 800px){
 
@@ -683,8 +711,19 @@ ul li .project_value i{
 		width: 100%;
 		height: auto;
 	}
-	.hire div[class*="col"]{
-		height: 70px;
+	.hire-title, .hire-me{
+		height: 80px;
+	}
+	.hire .button-frame{
+		height: 80px;
+	}
+	#button-frame-cv{
+		justify-content: flex-end;
+		padding-right: 10px;
+	}
+	#button-frame-email{
+		justify-content: flex-start;
+		padding-left: 10px;
 	}
 	.hire-title h1{
 		margin-left: 0;
@@ -713,6 +752,11 @@ ul li .project_value i{
 	}
 	.intro-logo img{
 		height: 100%;
+	}
+	.hire-title{
+		height: 80px;
+		padding-left: 0px;
+		padding: 0 10%;
 	}
 }
 
@@ -780,6 +824,41 @@ ul li .project_value i{
 	.intro-logo {
 		right: 15%;
 		opacity: 0.2;
+	}
+	.hire-title{
+		height: 80px;
+		padding-left: 0px;
+		padding: 10%;
+	}
+	.hire-title h1{
+		text-align: center;
+	}
+	.hire-me{
+		height: 140px;
+	}
+	.hire .button-frame{
+		height: 70px;
+	}
+	.button-frame a{
+		width: 100%;
+		display: flex;
+		justify-content: center;
+	}
+	.hire-me a div.button{
+		width: 80%;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+	}
+	#button-frame-cv{
+		justify-content: center;
+		align-items: flex-end;
+		padding-right: 0px;
+	}
+	#button-frame-email{
+		justify-content: center;
+		padding-left: 0px;
+		align-items: flex-start;
 	}
 
 }
