@@ -1,1 +1,1 @@
-My Portofolio Website : http://daniszaidan.me/ 
+My Portofolio Website : http://daniszaidan.github.io/ 
