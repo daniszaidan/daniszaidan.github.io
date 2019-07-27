@@ -15,13 +15,18 @@ body, p, a, li, span, button{
     height: auto;
 }
 /* Change Default Style Zero.CSS */
+
 .bg-csas{
 	background-color: #F8A400;
 }
 .color-csas{
 	color: #F8A400;
 }
-
+.btn-border{
+	background-color: white;
+	border: 3px solid #F8A400 !important;
+	font-weight: 500;
+}
 
 /* Navigation */
 nav{
@@ -246,11 +251,21 @@ footer .footer-half{
 }
 footer .footer-frame h3{
 	font-weight: 700;
-	margin: 40px 0;
+	margin: 40px 20px 20px 0;
 	/* padding: 0 20px; */
+}
+footer .footer-frame button{
+	margin: 0;
+	color: #F8A400;
 }
 footer .footer-half{
 	padding: 20px;
+}
+footer .footer-half .row{
+	margin-bottom: 10px;
+}
+footer .footer-half .row p:first-child{
+	font-weight: 500;
 }
 footer .footer-half h4{
 	font-weight: 700;
@@ -279,6 +294,7 @@ footer p{
 }
 .footer-bottom-copyright-frame p{
 	line-height: 75px;
+	font-weight: 500;
 }
 /* section-footer */
 
