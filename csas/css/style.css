@@ -111,6 +111,33 @@ nav ul li a{
 	top: 0;
 	right: 0;
 	z-index: 1;
+	transition: all 0.3s;
+}
+.text-background{
+	position: absolute;
+	z-index: -1;
+	font-size: 90px;
+	font-weight: 700;
+	top: 50%;
+	transform: translateY(-50%);
+	margin: 0 100px;
+	/* color: yellow; */
+	color: rgba(89, 89, 89, 0.06);
+	text-transform: uppercase;
+}
+.text-background .color-white{
+	color: white;
+	-webkit-text-fill-color: white;
+  	-webkit-text-stroke-width: 5px;
+  	-webkit-text-stroke-color: rgba(90, 90, 90, 0.06);;
+}
+.text-background-left{
+	left: 0px;
+	text-align: left;
+}
+.text-background-right{
+	right: 0px;
+	text-align: right;
 }
 /* background */
 
@@ -135,6 +162,7 @@ nav ul li a{
 	border-top-right-radius: 10px;
 	border-bottom-right-radius: 10px;
 	cursor: pointer;
+	z-index: 99;
 }
 .find-us p{
 	transform: rotate(90deg);
@@ -145,6 +173,7 @@ nav ul li a{
 	color: white;
 	margin-left: -25px;
 	text-transform: uppercase;
+	z-index: 99;
 }
 .home-intro{
 	width: 50%;
@@ -214,6 +243,7 @@ nav ul li a{
 	padding: 100px 0;
 	position: relative;
 	z-index: 2;
+	display: table;
 }
 .portfolio-title{
 	text-align: center;
@@ -223,6 +253,14 @@ nav ul li a{
 .portfolio-frame{
 	height: 400px;
 	width: 100%;
+}
+.portfolio-frame .col-7{
+	position: relative;
+}
+.portfolio-frame .col-7 .text-background{
+	margin: 0;
+	top: unset;
+    transform: unset;
 }
 .portfolio-frame div[class*="col"]{
   	height: 100%;
@@ -300,19 +338,30 @@ footer p{
 
 
 @media (max-width: 1000px){
-	nav ul li a{
+	nav ul li a,
+	nav.smaller ul li a{
 		margin: 0 20px;
 	}
 }
 @media (max-width: 880px){
-	nav ul li a{
-		margin: 0 10px;
+	nav ul li a,
+	nav.smaller ul li a{
+		margin: 0 9px;
 	}
 }
 
 
 /*Tablet (Smaller 760px)*/
 @media (max-width: 760px){
+
+	#background {
+		width: 100%;
+		height: 100vh;
+		background-size: auto 80%;
+		/* background-position: top right; */
+		background-position: center right;
+		opacity: 0;
+	}
 
 	/* Navigation */
 	nav{
@@ -353,6 +402,9 @@ footer p{
 		cursor: pointer;
 		margin: 19px;
 		z-index: 99;
+	}
+	#menu-list button{
+		margin: 0;
 	}
 	#menu-button span{
 		height: 3px;
@@ -424,5 +476,76 @@ footer p{
 	.right-list .button-sign-in:hover{
 		background: #02b3e4;
   	}
-  	/* Navigation */
+	/* Navigation */
+	  
+	/* section intro */
+	#section-intro{
+		height: auto;
+		padding: 100px 0;
+		display: table;
+	}
+	#section-intro h1{
+		display: none;
+	}
+	#section-intro .wrapper{
+		height: auto;
+	}
+	#section-intro .wrapper .intro-title{
+		padding-top: 0px;
+	}
+	#section-intro .wrapper .intro-title h3{
+		margin-left: 0px;
+	}
+	#section-intro .wrapper .intro-desc{
+		padding-top: 50px;
+	}
+
+
+	.portfolio-frame .col-7{
+		display: none;
+	}
+	.home-intro {
+		width: 80%;
+		position: absolute;
+		top: 50%;
+		transform: translateY(-50%);
+	}
+
+	.home-intro h1 {
+		font-size: 3.5rem;
+	}
+
+	.home-intro .row span{
+		display: block;
+	}
+
+	footer .footer-frame, footer .footer-half{
+		height: auto;
+	}
+	.footer-bottom-image-frame{
+		display: none;
+	}
+	footer p {
+		font-size: .9rem;
+	}
+	.footer-bottom-copyright-frame p{
+		float: unset;
+		text-align: center;
+	}
+	footer .footer-half {
+		padding: 20px 20px 0 0;
+	}
+}
+
+/*Phone (Smaller 480px)*/
+@media (max-width: 480px){
+
+	.home-intro h1 {
+		font-size: 3rem;
+	}
+
+	footer .footer-half {
+		padding: 20px 0;
+	}
+	
 }
