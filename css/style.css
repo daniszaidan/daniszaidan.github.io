@@ -504,12 +504,12 @@ footer p span{
 	background-color: #F8F8F8;
 	overflow: hidden;
 }
-#project-section-one .home-link{
+.home-link{
 	position: absolute;
 	left: 0;
 	top: 15%;
 }
-#project-section-one .home-link p{
+.home-link p{
 	font-weight: 500;
 	color: #189ad3;
 	font-size: 1.5rem;
