@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://daniszaidan.github.io/sitemap.xml
