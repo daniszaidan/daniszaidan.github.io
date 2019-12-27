@@ -160,6 +160,8 @@
 					onclick="changeCategory(this, 'all')">All</button>
 				<button type="button" class="button btn-website btn-category"
 					onclick="changeCategory(this, 'website')">Website</button>
+				<button type="button" class="button btn-android btn-category"
+					onclick="changeCategory(this, 'android')">Android</button>
 				<button type="button" class="button btn-desktop btn-category"
 					onclick="changeCategory(this, 'desktop')">Desktop App</button>
 				<button type="button" class="button btn-uiux btn-category" onclick="changeCategory(this, 'uiux')">UI/UX
@@ -617,18 +619,16 @@
 		Object.keys(portfolio_data).forEach(function (key) {
 			// console.log(portfolio_data[key]);
 			// console.log(portfolio_data[key].project_technology.technology_1.technology_name);
-			console.log(portfolio_data[key].project_team);
+			// console.log(portfolio_data[key].project_team);
 			// console.log(portfolio_data[key].project_screenshot.project_screenshot_2.project_screenshot_image);
 		});
-
-		console.log("==========");
 
 
 		Object.keys(portfolio_data).forEach(function (key) {
 			var newData = portfolio_data[key].project_team;
 
 			newData.forEach(function (key2) {
-				console.log(key2);
+				// console.log(key2);
 			});
 		});
 

@@ -71,6 +71,10 @@ function changeCategory(obj, category) {
             $(".portfolio").hide();
             $(".3d").show();
             break;
+        case "android":
+            $(".portfolio").hide();
+            $(".android").show();
+            break;
         default:
             $(".portfolio").hide();
             $(".portfolio").show();
@@ -80,7 +84,7 @@ function changeCategory(obj, category) {
 
     var thisButton = "." + $(obj).attr('class');
     var buttonType = thisButton.split(" ");
-    console.log(buttonType[1]);
+    // console.log(buttonType[1]);
     $(".btn-category").removeClass("active");
     $("." + buttonType[1] + "").addClass("active");
 
