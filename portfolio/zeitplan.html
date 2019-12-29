@@ -161,31 +161,36 @@
             <div class="project-screenshot col-6 col-m-12">
                 <h1>Login & Home Page</h1>
                 <div class="card">
-                    <img src="images/Zeitplan-1.jpg" alt="EndlessCode">
+                    <img class="lazy image-popup" src="images/thumbnail.jpg" data-src="images/Zeitplan-1.jpg"
+                        href="images/Zeitplan-1.jpg" alt="EndlessCode">
                 </div>
             </div>
             <div class="project-screenshot col-6 col-m-12">
                 <h1>Schedule & Add Schedule Page</h1>
                 <div class="card">
-                    <img src="images/Zeitplan-2.jpg" alt="EndlessCode">
+                    <img class="lazy image-popup" src="images/thumbnail.jpg" data-src="images/Zeitplan-2.jpg"
+                        alt="EndlessCode">
                 </div>
             </div>
             <div class="project-screenshot col-6 col-m-12">
                 <h1>Setting and Download Page</h1>
                 <div class="card">
-                    <img src="images/Zeitplan-3.jpg" alt="EndlessCode">
+                    <img class="lazy image-popup" src="images/thumbnail.jpg" data-src="images/Zeitplan-3.jpg"
+                        alt="EndlessCode">
                 </div>
             </div>
             <div class="project-screenshot col-6 col-m-12">
                 <h1>Zeitplan in PlayStore</h1>
                 <div class="card">
-                    <img src="images/Zeitplan-4.jpg" alt="EndlessCode">
+                    <img class="lazy image-popup" src="images/thumbnail.jpg" data-src="images/Zeitplan-4.jpg"
+                        alt="EndlessCode">
                 </div>
             </div>
             <div class="project-screenshot col-12 col-m-12" id="our-team">
                 <h1>Our Team and Roles</h1>
                 <div class="card">
-                    <img src="images/Zeitplan-Design-System-9.jpg" alt="EndlessCode">
+                    <img class="lazy image-popup" src="images/thumbnail.jpg"
+                        data-src="images/Zeitplan-Design-System-9.jpg" alt="EndlessCode">
                 </div>
             </div>
 
@@ -268,7 +273,7 @@
     <script src="https://cdn.jsdelivr.net/npm/vanilla-lazyload@12.4.0/dist/lazyload.min.js"></script>
     <script src="https://cdn.jsdelivr.net/gh/cferdinandi/smooth-scroll@15/dist/smooth-scroll.polyfills.min.js"></script>
     <script>
-        $(".project-screenshot").children().children().map(function () { $(this).attr("class", "lazy image-popup"); $(this).attr("href", $(this).attr("src")); }); // Manipulating images
+        // $(".project-screenshot").children().children().map(function () { $(this).attr("class", "lazy image-popup"); $(this).attr("href", $(this).attr("src")); }); // Manipulating images
         var scroll = new SmoothScroll('a[href*="#"]', { offset: 40 }); // SmoothScroll
         var lazyLoadInstance = new LazyLoad({ elements_selector: ".lazy" }); // LazyLoad
         $('.image-popup').magnificPopup({ type: 'image', mainClass: 'mfp-with-zoom', zoom: { enabled: true } }); // Magnific Popup
