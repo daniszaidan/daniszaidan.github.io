@@ -1,3 +1,12 @@
+$(".project-screenshot").children().children().map(function () {
+    $(this).attr("class", "lazy image-popup");
+    $(this).attr("alt", $(this).attr("data-src"));
+    $(this).attr("href", $(this).attr("data-src"));
+});
+var scroll = new SmoothScroll('a[href*="#"]', { offset: 40 }); // SmoothScroll
+var lazyLoadInstance = new LazyLoad({ elements_selector: ".lazy" }); // LazyLoad
+$('.image-popup').magnificPopup({ type: 'image', mainClass: 'mfp-with-zoom', zoom: { enabled: true } }); // Magnific Popup
+
 window.onload = function () {
     console.log("sudah berhenti loading");
 };
