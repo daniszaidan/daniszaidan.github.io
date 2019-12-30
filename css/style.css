@@ -697,15 +697,14 @@ ul li .project_value i{
   cursor: progress; }
 
 .mfp-zoom-out-cur, .mfp-zoom-out-cur .mfp-image-holder .mfp-close {
-  cursor: -moz-zoom-out;
-  cursor: -webkit-zoom-out;
-  cursor: zoom-out; }
+  /* cursor: -moz-zoom-out;
+  cursor: -webkit-zoom-out; */
+  cursor: auto; }
 
 .mfp-zoom {
-  cursor: pointer;
-  cursor: -webkit-zoom-in;
-  cursor: -moz-zoom-in;
-  cursor: zoom-in; }
+  /* cursor: -webkit-zoom-in;
+  cursor: -moz-zoom-in; */
+  cursor: auto; }
 
 .mfp-auto-cursor .mfp-content {
   cursor: auto; }
@@ -748,7 +747,7 @@ ul li .project_value i{
 button.mfp-close,
 button.mfp-arrow {
   overflow: visible;
-  cursor: pointer;
+  cursor: pointer !important;
   background: transparent;
   border: 0;
   -webkit-appearance: none;
