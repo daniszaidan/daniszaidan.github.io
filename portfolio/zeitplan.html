@@ -131,6 +131,15 @@
                     <span class="project_value">Android</span>
                 </li>
                 <li class="col-s-12">
+                    <span class="project_title">Technology</span>
+                    <span class="project_value">
+                        <a href="https://www.java.com/" target="_blank">Java</a>,
+                        <a href="https://www.sqlite.org/" target="_blank">SQLite</a>,
+                        <a href="https://firebase.google.com/" target="_blank">Firebase</a>,
+                        <a href="http://127.0.0.1:5500/portfolio/zeitplan-design-system.html" target="_blank">ZDS</a>
+                    </span>
+                </li>
+                <li class="col-s-12">
                     <span class="project_title">Team</span>
                     <span class="project_value">Danis, Baskoro, Maharani</span>
                 </li>
@@ -144,53 +153,35 @@
                             href="https://play.google.com/store/apps/details?id=org.d3ifcool.zeitplan"
                             target="_blank">View in PlayStore<i class="fas fa-link"></i></a></span>
                 </li> <br><br>
-                <li class="col-s-12">
-                    <span class="project_title">Technology</span>
-                    <span class="project_value">
-                        <a href="https://www.java.com/" target="_blank">Java</a>,
-                        <a href="https://www.sqlite.org/" target="_blank">SQLite</a>,
-                        <a href="https://firebase.google.com/" target="_blank">Firebase</a>,
-                        <a href="https://firebase.google.com/docs/auth/android/google-signin" target="_blank">Google
-                            Auth</a>,
-                        <a href="http://127.0.0.1:5500/portfolio/zeitplan-design-system.html" target="_blank">Design
-                            System</a>,
-                        etc
-                    </span>
-                </li>
             </ul>
             <div class="project-screenshot col-6 col-m-12">
                 <h1>Login & Home Page</h1>
                 <div class="card">
-                    <img class="lazy image-popup" src="images/thumbnail.jpg" data-src="images/Zeitplan-1.jpg"
-                        href="images/Zeitplan-1.jpg" alt="EndlessCode">
+                    <img src="images/thumbnail.jpg" data-src="images/Zeitplan-1.jpg">
                 </div>
             </div>
             <div class="project-screenshot col-6 col-m-12">
                 <h1>Schedule & Add Schedule Page</h1>
                 <div class="card">
-                    <img class="lazy image-popup" src="images/thumbnail.jpg" data-src="images/Zeitplan-2.jpg"
-                        alt="EndlessCode">
+                    <img src="images/thumbnail.jpg" data-src="images/Zeitplan-2.jpg">
                 </div>
             </div>
             <div class="project-screenshot col-6 col-m-12">
                 <h1>Setting and Download Page</h1>
                 <div class="card">
-                    <img class="lazy image-popup" src="images/thumbnail.jpg" data-src="images/Zeitplan-3.jpg"
-                        alt="EndlessCode">
+                    <img src="images/thumbnail.jpg" data-src="images/Zeitplan-3.jpg">
                 </div>
             </div>
             <div class="project-screenshot col-6 col-m-12">
                 <h1>Zeitplan in PlayStore</h1>
                 <div class="card">
-                    <img class="lazy image-popup" src="images/thumbnail.jpg" data-src="images/Zeitplan-4.jpg"
-                        alt="EndlessCode">
+                    <img src="images/thumbnail.jpg" data-src="images/Zeitplan-4.jpg">
                 </div>
             </div>
             <div class="project-screenshot col-12 col-m-12" id="our-team">
                 <h1>Our Team and Roles</h1>
                 <div class="card">
-                    <img class="lazy image-popup" src="images/thumbnail.jpg"
-                        data-src="images/Zeitplan-Design-System-9.jpg" alt="EndlessCode">
+                    <img src="images/thumbnail.jpg" data-src="images/Zeitplan-Design-System-9.jpg">
                 </div>
             </div>
 
@@ -201,7 +192,7 @@
         <div class="wrapper">
             <div class="about">
                 <div class="col-2 col-m-2 col-s-12 profile-image">
-                    <img class="lazy" src="../assets/danis.jpg" alt="Danis">
+                    <img src="../assets/danis.jpg" alt="Danis">
                 </div>
                 <div class="col-7 col-m-10 col-s-12 about-me">
                     <h1>About Me</h1>
@@ -272,11 +263,9 @@
     <script src="../js/jquery.magnific-popup.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/vanilla-lazyload@12.4.0/dist/lazyload.min.js"></script>
     <script src="https://cdn.jsdelivr.net/gh/cferdinandi/smooth-scroll@15/dist/smooth-scroll.polyfills.min.js"></script>
+    <script src="../js/script.js"></script>
     <script>
-        // $(".project-screenshot").children().children().map(function () { $(this).attr("class", "lazy image-popup"); $(this).attr("href", $(this).attr("src")); }); // Manipulating images
-        var scroll = new SmoothScroll('a[href*="#"]', { offset: 40 }); // SmoothScroll
-        var lazyLoadInstance = new LazyLoad({ elements_selector: ".lazy" }); // LazyLoad
-        $('.image-popup').magnificPopup({ type: 'image', mainClass: 'mfp-with-zoom', zoom: { enabled: true } }); // Magnific Popup
+
     </script>
 
 </body>
