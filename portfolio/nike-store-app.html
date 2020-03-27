@@ -1,237 +1,310 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
+  <head>
     <title>Danis - Nike Store App</title>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" type="text/css" href="../css/style.css">
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" type="text/css" href="../css/style.css" />
 
-    <link href="https://fonts.googleapis.com/css?family=Poppins:300,400,500" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
-        integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+    <link
+      href="https://fonts.googleapis.com/css?family=Poppins:300,400,500"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+      integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf"
+      crossorigin="anonymous"
+    />
 
-    <meta prefix="og: http://ogp.me/ns#" content='Danis Zaidan' property='og:title' />
-    <meta content='Danis Zaidan' property='title' />
-    <meta content='Danis Zaidan' name='title' />
+    <meta
+      prefix="og: http://ogp.me/ns#"
+      content="Danis Zaidan"
+      property="og:title"
+    />
+    <meta content="Danis Zaidan" property="title" />
+    <meta content="Danis Zaidan" name="title" />
 
-    <meta content='Danis Zaidan' property="og:site_name" />
-    <meta content='Danis Zaidan' property='site_name' />
-    <meta content='Danis Zaidan' name='site_name' />
+    <meta content="Danis Zaidan" property="og:site_name" />
+    <meta content="Danis Zaidan" property="site_name" />
+    <meta content="Danis Zaidan" name="site_name" />
 
-    <meta content='Danis Zaidan, daniszaidan, danis, zaidan' property="og:keywords" />
-    <meta content='Danis Zaidan, daniszaidan, danis, zaidan' property='keywords' />
-    <meta content='Danis Zaidan, daniszaidan, danis, zaidan' name='keywords' />
+    <meta
+      content="Danis Zaidan, daniszaidan, danis, zaidan"
+      property="og:keywords"
+    />
+    <meta
+      content="Danis Zaidan, daniszaidan, danis, zaidan"
+      property="keywords"
+    />
+    <meta content="Danis Zaidan, daniszaidan, danis, zaidan" name="keywords" />
 
-    <meta content='Danis Zaidan' property="og:Author" />
-    <meta content='Danis Zaidan' property='Author' />
-    <meta content='Danis Zaidan' name='Author' />
+    <meta content="Danis Zaidan" property="og:Author" />
+    <meta content="Danis Zaidan" property="Author" />
+    <meta content="Danis Zaidan" name="Author" />
 
-    <meta prefix="og: http://ogp.me/ns#" content='Portfolio Website' property="og:type" />
-    <meta prefix="og: http://ogp.me/ns#" content='Portfolio Website' property='type' />
-    <meta prefix="og: http://ogp.me/ns#" content='Portfolio Website' name='type' />
+    <meta
+      prefix="og: http://ogp.me/ns#"
+      content="Portfolio Website"
+      property="og:type"
+    />
+    <meta
+      prefix="og: http://ogp.me/ns#"
+      content="Portfolio Website"
+      property="type"
+    />
+    <meta
+      prefix="og: http://ogp.me/ns#"
+      content="Portfolio Website"
+      name="type"
+    />
 
-    <meta prefix="og: http://ogp.me/ns#" content='http://daniszaidan.github.io/' property="og:url" />
-    <meta content='http://daniszaidan.github.io/' property='url' />
-    <meta content='http://daniszaidan.github.io/' name='url' />
-
+    <meta
+      prefix="og: http://ogp.me/ns#"
+      content="http://daniszaidan.github.io/"
+      property="og:url"
+    />
+    <meta content="http://daniszaidan.github.io/" property="url" />
+    <meta content="http://daniszaidan.github.io/" name="url" />
 
     <meta name="twitter:card" content="summary_large_image" />
     <meta name="twitter:site" content="@" />
     <meta name="twitter:domain" content="http://daniszaidan.github.io/" />
     <meta name="twitter:title" content="Danis Zaidan" />
 
-    <meta content='all-language' http-equiv='Content-Language' />
-    <meta content='Indonesia' name='geo.placename' />
-    <meta content='id' name='geo.country' />
-    <meta content='general' name='rating' />
-    <meta content='all' name='audience' />
-
+    <meta content="all-language" http-equiv="Content-Language" />
+    <meta content="Indonesia" name="geo.placename" />
+    <meta content="id" name="geo.country" />
+    <meta content="general" name="rating" />
+    <meta content="all" name="audience" />
 
     <!-- Yang diganti :  -->
     <meta name="twitter:description" content="Danis Zaidan - Nike Store App" />
 
-    <meta content='Danis Zaidan - Nike Store App' property="og:subject" />
-    <meta content='Danis Zaidan - Nike Store App' property='subject' />
-    <meta content='Danis Zaidan - Nike Store App' name='subject' />
-
-    <meta prefix="og: http://ogp.me/ns#" content='Danis Zaidan - Nike Store App' property="og:description" />
-    <meta content='Danis Zaidan - Nike Store App' property='description' />
-    <meta content='Danis Zaidan - Nike Store App' name='description' />
-
-    <meta prefix="og: http://ogp.me/ns#" content='https://daniszaidan.github.io/portfolio/images/NikeStoreApp-1.jpg'
-        property="og:image" />
-    <meta content='https://daniszaidan.github.io/portfolio/images/NikeStoreApp-1.jpg' property='image' />
-    <meta content='https://daniszaidan.github.io/portfolio/images/NikeStoreApp-1.jpg' name='image' />
+    <meta content="Danis Zaidan - Nike Store App" property="og:subject" />
+    <meta content="Danis Zaidan - Nike Store App" property="subject" />
+    <meta content="Danis Zaidan - Nike Store App" name="subject" />
 
     <meta
-        content='nike, shoes, store, nikeapp, Danis, Zaidan, Danis Zaidan, daniszaidan, daniszaidan.github.io, daniszaidan.me'
-        property="og:keywords" />
+      prefix="og: http://ogp.me/ns#"
+      content="Danis Zaidan - Nike Store App"
+      property="og:description"
+    />
+    <meta content="Danis Zaidan - Nike Store App" property="description" />
+    <meta content="Danis Zaidan - Nike Store App" name="description" />
+
     <meta
-        content='nike, shoes, store, nikeapp, Danis, Zaidan, Danis Zaidan, daniszaidan, daniszaidan.github.io, daniszaidan.me'
-        property='keywords' />
+      prefix="og: http://ogp.me/ns#"
+      content="https://daniszaidan.github.io/portfolio/images/NikeStoreApp-1.jpg"
+      property="og:image"
+    />
     <meta
-        content='nike, shoes, store, nikeapp, Danis, Zaidan, Danis Zaidan, daniszaidan, daniszaidan.github.io, daniszaidan.me'
-        name='keywords' />
+      content="https://daniszaidan.github.io/portfolio/images/NikeStoreApp-1.jpg"
+      property="image"
+    />
+    <meta
+      content="https://daniszaidan.github.io/portfolio/images/NikeStoreApp-1.jpg"
+      name="image"
+    />
 
-</head>
+    <meta
+      content="nike, shoes, store, nikeapp, Danis, Zaidan, Danis Zaidan, daniszaidan, daniszaidan.github.io, daniszaidan.me"
+      property="og:keywords"
+    />
+    <meta
+      content="nike, shoes, store, nikeapp, Danis, Zaidan, Danis Zaidan, daniszaidan, daniszaidan.github.io, daniszaidan.me"
+      property="keywords"
+    />
+    <meta
+      content="nike, shoes, store, nikeapp, Danis, Zaidan, Danis Zaidan, daniszaidan, daniszaidan.github.io, daniszaidan.me"
+      name="keywords"
+    />
+  </head>
 
-<body>
-
+  <body>
     <div id="project-section-one">
-        <div class="wrapper clearfix">
-            <div class="section-half-left col-6 col-m-12">
-                <div class="projectializing">
-                    <a href="../">
-                        <div class="home-link">
-                            <p>&Z</p>
-                        </div>
-                    </a>
-                    <h3 class="code">Project</h3>
-                    <h1 class="title">Nike Store App</h1>
-                    <a href="#project-description">
-                        <div class="scroll-detail">
-                            <div class="icon-circle">
-                                <i class="fas fa-chevron-down"></i>
-                            </div>
-                            <p>Project Detail</p>
-
-                        </div>
-                    </a>
+      <div class="wrapper clearfix">
+        <div class="section-half-left col-6 col-m-12">
+          <div class="projectializing">
+            <a href="../">
+              <div class="home-link">
+                <p>&Z</p>
+              </div>
+            </a>
+            <h3 class="code">Project</h3>
+            <h1 class="title">Nike Store App</h1>
+            <a href="#project-description">
+              <div class="scroll-detail">
+                <div class="icon-circle">
+                  <i class="fas fa-chevron-down"></i>
                 </div>
-            </div>
-            <div class="section-half-right col-6 col-m-12">
-                <img src="images/nike.png" alt="CatMe">
-            </div>
+                <p>Project Detail</p>
+              </div>
+            </a>
+          </div>
         </div>
+        <div class="section-half-right col-6 col-m-12">
+          <img src="images/nike.png" alt="CatMe" />
+        </div>
+      </div>
     </div>
     <div id="project-section-two">
-        <div class="wrapper">
-            <div class="project-description" id="project-description">
-                <h1>Description</h1>
-                <p>
-                    Dibuat saat mengikuti Design Challenges Event Ke #1 dari
-                    <a href="https://www.instagram.com/designjam.id/" target="_blank">@designjam.id</a>
-                    yang temanya adalah "Shoe Shop App".
-                </p>
-            </div>
-            <ul class="project-detail">
-                <li class="col-s-12">
-                    <span class="project_title">Type</span>
-                    <span class="project_value">UI/UX Design</span>
-                </li>
-                <li class="col-s-12">
-                    <span class="project_title">Technology</span>
-                    <span class="project_value">
-                        <a href="https://www.figma.com/" target="_blank">Figma</a>
-                    </span>
-                </li>
-                <li class="col-s-12">
-                    <span class="project_title">Team</span>
-                    <span class="project_value">Danis Z</span>
-                </li>
-                <!-- <li class="col-s-12">
+      <div class="wrapper">
+        <div class="project-description" id="project-description">
+          <h1>Description</h1>
+          <p>
+            Dibuat saat mengikuti Design Challenges Event Ke #1 dari
+            <a href="https://www.instagram.com/designjam.id/" target="_blank"
+              >@designjam.id</a
+            >
+            yang temanya adalah "Shoe Shop App".
+          </p>
+        </div>
+        <ul class="project-detail">
+          <li class="col-s-12">
+            <span class="project_title">Type</span>
+            <span class="project_value">UI/UX Design</span>
+          </li>
+          <li class="col-s-12">
+            <span class="project_title">Technology</span>
+            <span class="project_value">
+              <a href="https://www.figma.com/" target="_blank">Figma</a>
+            </span>
+          </li>
+          <li class="col-s-12">
+            <span class="project_title">Team</span>
+            <span class="project_value">Danis Z</span>
+          </li>
+          <!-- <li class="col-s-12">
                     <span class="project_title">Client</span>
                     <span class="project_value">Olivia Vokasi Unair </span>
                 </li> -->
-                <li class="col-s-12">
-                    <span class="project_title">Url</span>
-                    <span class="project_value"><a href="https://www.instagram.com/p/B6hzjALF3Tb/" target="_blank">View
-                            Gallery<i class="fas fa-link"></i></a></span>
-                </li>
-            </ul>
-            <div class="project-screenshot col-12 col-m-12">
-                <h1>UI Design</h1>
-                <div class="card">
-                    <img src="images/thumbnail.jpg" data-src="images/NikeStoreApp-1.jpg">
-                </div>
-            </div>
-            <div class="project-screenshot col-6 col-m-12">
-                <h1>Design Theme</h1>
-                <div class="card">
-                    <img src="images/thumbnail.jpg" data-src="images/NikeStoreApp-2.jpg">
-                </div>
-            </div>
-            <div class="project-screenshot col-6 col-m-12">
-                <h1>Design Assets</h1>
-                <div class="card">
-                    <img src="images/thumbnail.jpg" data-src="images/NikeStoreApp-3.jpg">
-                </div>
-            </div>
-
+          <li class="col-s-12">
+            <span class="project_title">Url</span>
+            <span class="project_value"
+              ><a
+                href="https://www.instagram.com/p/B6hzjALF3Tb/"
+                target="_blank"
+                >View Gallery<i class="fas fa-link"></i></a
+            ></span>
+          </li>
+        </ul>
+        <div class="project-screenshot col-12 col-m-12">
+          <h1>UI Design</h1>
+          <div class="card">
+            <img
+              src="images/thumbnail.jpg"
+              data-src="images/NikeStoreApp-1.jpg"
+            />
+          </div>
         </div>
+        <div class="project-screenshot col-6 col-m-12">
+          <h1>Design Theme</h1>
+          <div class="card">
+            <img
+              src="images/thumbnail.jpg"
+              data-src="images/NikeStoreApp-2.jpg"
+            />
+          </div>
+        </div>
+        <div class="project-screenshot col-6 col-m-12">
+          <h1>Design Assets</h1>
+          <div class="card">
+            <img
+              src="images/thumbnail.jpg"
+              data-src="images/NikeStoreApp-3.jpg"
+            />
+          </div>
+        </div>
+      </div>
     </div>
     <div id="section-four" class="clearfix">
-        <div class="wrapper">
-            <div class="about">
-                <div class="col-2 col-m-2 col-s-12 profile-image">
-                    <img src="../assets/danis.jpg" alt="Danis">
-                </div>
-                <div class="col-7 col-m-10 col-s-12 about-me">
-                    <h1>About Me</h1>
-                    <p>I’am a enthusiastic programmer and designer with with several months of experience.
-                        Specialising in Front-end
-                        Developer and UI/UX Designer.</p>
-                    <p>
-                        Studying at Diploma of Software Engineering - Telkom University. Feel free to contact me in
-                        <a href="mailto:daniszaidan@gmail.com">daniszaidan@gmail.com</a>
-                    </p>
-                </div>
-                <div class="col-3 col-m-12 social-media">
-                    <div class="sosmed-icon">
-                        <a href="https://github.com/daniszaidan" target="blank">
-                            <i class="fab fa-github"></i>
-                        </a>
-                    </div>
-                    <div class="sosmed-icon">
-                        <a href="https://dribbble.com/daniszaidan" target="blank">
-                            <i class="fas fa-basketball-ball"></i>
-                        </a>
-                    </div>
-                    <div class="sosmed-icon">
-                        <a href="https://www.linkedin.com/in/daniszaidan/" target="blank">
-                            <i class="fab fa-linkedin"></i>
-                        </a>
-                    </div>
-                    <div class="sosmed-icon">
-                        <a href="https://www.instagram.com/daniszaidan/" target="blank">
-                            <i class="fab fa-instagram"></i>
-                        </a>
-                    </div>
-                </div>
+      <div class="wrapper">
+        <div class="about">
+          <div class="col-2 col-m-2 col-s-12 profile-image">
+            <img src="../assets/danis.jpg" alt="Danis" />
+          </div>
+          <div class="col-7 col-m-10 col-s-12 about-me">
+            <h1>About Me</h1>
+            <p>
+              I’am a enthusiastic programmer and designer with with several
+              months of experience. Specialising in Front-end Developer and
+              UI/UX Designer.
+            </p>
+            <p>
+              Studying at Diploma of Software Engineering - Telkom University.
+              Feel free to contact me in
+              <a href="mailto:daniszaidan@gmail.com">daniszaidan@gmail.com</a>
+            </p>
+          </div>
+          <div class="col-3 col-m-12 social-media">
+            <div class="sosmed-icon">
+              <a href="https://github.com/daniszaidan" target="blank">
+                <i class="fab fa-github"></i>
+              </a>
             </div>
-
-            <div class="hire card">
-                <div class="col-5 col-m-12 hire-title">
-                    <h1>Have any project in mind ?</h1>
-                </div>
-                <div class="col-7 col-m-12 hire-me">
-                    <div class="col-6 col-m-6 col-s-12 button-frame" id="button-frame-cv">
-                        <a href="../assets/cv_daniszaidan.png" target="_blank" download>
-                            <div class="button button-cv">
-                                <i class="far fa-file-alt"></i>
-                                <span>View CV</span>
-                            </div>
-                        </a>
-                    </div>
-                    <div class="col-6 col-m-6 col-s-12 button-frame" id="button-frame-email">
-                        <a href="mailto:daniszaidan@gmail.com" title="daniszaidan@gmail.com">
-                            <div class="button button-hire">
-                                <i class="far fa-envelope"></i>
-                                <span>Hire Me</span>
-                            </div>
-                        </a>
-                    </div>
-                </div>
+            <div class="sosmed-icon">
+              <a href="https://dribbble.com/daniszaidan" target="blank">
+                <i class="fas fa-basketball-ball"></i>
+              </a>
             </div>
-
-            <footer>
-                <p>Copyright © 2019 | Created by
-                    <span>Danis Zaidan</span> - Bandung</p>
-            </footer>
+            <div class="sosmed-icon">
+              <a href="https://www.linkedin.com/in/daniszaidan/" target="blank">
+                <i class="fab fa-linkedin"></i>
+              </a>
+            </div>
+            <div class="sosmed-icon">
+              <a href="https://www.instagram.com/daniszaidan/" target="blank">
+                <i class="fab fa-instagram"></i>
+              </a>
+            </div>
+          </div>
         </div>
+
+        <div class="hire card">
+          <div class="col-5 col-m-12 hire-title">
+            <h1>Have any project in mind ?</h1>
+          </div>
+          <div class="col-7 col-m-12 hire-me">
+            <div
+              class="col-6 col-m-6 col-s-12 button-frame"
+              id="button-frame-cv"
+            >
+              <a href="../assets/cv_daniszaidan.pdf" target="_blank" download>
+                <div class="button button-cv">
+                  <i class="far fa-file-alt"></i>
+                  <span>View CV</span>
+                </div>
+              </a>
+            </div>
+            <div
+              class="col-6 col-m-6 col-s-12 button-frame"
+              id="button-frame-email"
+            >
+              <a
+                href="mailto:daniszaidan@gmail.com"
+                title="daniszaidan@gmail.com"
+              >
+                <div class="button button-hire">
+                  <i class="far fa-envelope"></i>
+                  <span>Hire Me</span>
+                </div>
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <footer>
+          <p>
+            Copyright © 2019 | Created by <span>Danis Zaidan</span> - Bandung
+          </p>
+        </footer>
+      </div>
     </div>
 
     <script src="../js/jquery.min.js"></script>
@@ -239,7 +312,5 @@
     <script src="https://cdn.jsdelivr.net/npm/vanilla-lazyload@12.4.0/dist/lazyload.min.js"></script>
     <script src="https://cdn.jsdelivr.net/gh/cferdinandi/smooth-scroll@15/dist/smooth-scroll.polyfills.min.js"></script>
     <script src="../js/script.js"></script>
-
-</body>
-
+  </body>
 </html>
