@@ -697,6 +697,16 @@ ul li .project_value i {
   margin-left: 5px;
   margin-right: 15px;
 }
+.project_tech .project_value a {
+  background-color: #03a9f4;
+  color: white;
+  padding: 3px 9px;
+  border-radius: 50px;
+  font-size: 0.9rem;
+  margin: 5px 5px 0px 0px;
+  display: block;
+  float: left;
+}
 .project-screenshot {
   padding-right: 50px;
   margin-bottom: 30px;
