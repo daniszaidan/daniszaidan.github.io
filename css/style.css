@@ -247,9 +247,11 @@ table {
 }
 .specializing p {
   font-weight: 400;
-  font-size: 14px;
+  font-size: 15px;
   color: #5d5d5d;
   transition: all 0.5s;
+  opacity: 0.8;
+  margin-top: 5px;
 }
 .specializing-frame {
   z-index: 2;
@@ -269,6 +271,7 @@ table {
 .specializing-frame .card p {
   font-size: 0.9em;
   font-weight: 400;
+  text-align: center;
 }
 /* System Grid */
 .col-12,
@@ -698,14 +701,41 @@ ul li .project_value i {
   margin-right: 15px;
 }
 .project_tech .project_value a {
-  background-color: #03a9f4;
+  /* background-color: #03a9f4;
   color: white;
   padding: 3px 9px;
   border-radius: 50px;
   font-size: 0.9rem;
   margin: 5px 5px 0px 0px;
   display: block;
+  float: left; */
+
+  font-size: 0.8em;
+  padding: 7px 1.3em;
+  margin: 5px 0;
+  margin-right: 5px;
+  background: none;
+  transition: all 0.3s ease-in-out;
+  border: 0;
+  cursor: pointer;
+  outline: 0;
+  letter-spacing: 0.5px;
+  overflow: hidden;
+  position: relative;
+  background-color: white;
+  color: #03a9f4;
+  font-weight: 500;
+  border-radius: 0.25em;
+  display: block;
   float: left;
+  margin: 0px 10px 10px 0px;
+  box-shadow: 0 1px 10px 0 rgba(0, 0, 0, 0.1);
+  transition: all 0.3s;
+}
+.project_tech .project_value a:hover {
+  transform: translate3d(0, -2px, 0);
+  color: #03a9f4;
+  font-weight: 500;
 }
 .project-screenshot {
   padding-right: 50px;
