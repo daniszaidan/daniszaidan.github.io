@@ -437,7 +437,8 @@ button .ripple {
   padding: 15px;
 }
 .project-category {
-  color: rgba(255, 255, 255, 0.7);
+  /* color: rgba(255, 255, 255, 0.7); */
+  color: rgba(255, 255, 255, 0.9);
   font-size: 0.8em;
   margin-bottom: 0.25em;
   position: relative;
@@ -613,6 +614,48 @@ footer p span {
   left: 0;
   top: 15%;
 }
+.home-link .home-link-icon {
+  border-radius: 50%;
+  width: 35px;
+  height: 35px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  overflow: hidden;
+}
+.home-link .home-link-icon i {
+  transition: all 0.3s;
+  font-size: 1.1rem;
+  color: #999999;
+  width: 30px;
+  height: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #f8f8f8;
+  border-radius: 50%;
+  position: relative;
+  z-index: 3;
+}
+.home-link .home-link-icon span {
+  transition: all 0.5s;
+  /* transition: right 0.5s, opacity 0.7s; */
+  position: absolute;
+  right: -100px;
+  font-weight: 500;
+  color: #5d5d5d;
+  opacity: 0;
+  z-index: 2;
+}
+.home-link:hover .home-link-icon {
+  border: 2px solid #5d5d5d;
+  overflow: unset;
+}
+.home-link:hover .home-link-icon span {
+  right: -130px;
+  opacity: 1;
+}
 .home-link p {
   font-weight: 500;
   color: #189ad3;
@@ -674,6 +717,9 @@ footer p span {
 .project-description p {
   font-weight: 400;
   font-size: 1.2rem;
+}
+.project-description b {
+  font-weight: 500;
 }
 .project-description a {
   color: #03a9f4;
