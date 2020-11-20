@@ -1272,6 +1272,63 @@ img.mfp-img {
 }
 /* end of magnific popup image */
 
+.alert-box {
+  position: fixed;
+  min-width: 45%;
+  top: -99%;
+  left: 50%;
+  transform: translateX(-50%);
+  padding: 15px 20px;
+  z-index: 999;
+  height: 70px;
+
+  border-radius: 0.25em;
+  box-shadow: 0px 0px 80px 0px rgba(0, 0, 0, 0.1);
+  /*padding: 1.25em;*/
+  background-color: white;
+  transition: all 0.3s;
+  overflow: hidden;
+  transition: all 0.5s;
+}
+.alert-box div[class*='col'] {
+  display: flex;
+  align-items: center;
+  height: 100%;
+  color: #5d5d5d;
+}
+.alert-box .alert-close {
+  justify-content: center;
+}
+.alert-box .alert-close i {
+  color: #f5473a;
+  cursor: pointer;
+}
+#section-comingsoon {
+  width: 100%;
+  height: 100vh;
+  background-color: #f8f8f8;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+.comingsoon-frame h1 {
+  font-size: 2rem;
+  text-align: center;
+}
+.comingsoon-frame p {
+  font-size: 1rem;
+  margin-top: 10px;
+  text-align: center;
+}
+.back-to-home {
+  position: absolute;
+  bottom: 20%;
+}
+.back-to-home button a {
+  color: #5d5d5d;
+}
+
 /*Tablet (Smaller 800px)*/
 @media (max-width: 800px) {
   .col-m-12 {
@@ -1396,6 +1453,9 @@ img.mfp-img {
     padding-left: 0px;
     padding: 0 10%;
   }
+  .alert-box {
+    min-width: 80%;
+  }
 }
 
 /*Phone (Smaller 480px)*/
@@ -1497,62 +1557,7 @@ img.mfp-img {
     padding-left: 0px;
     align-items: flex-start;
   }
-}
-
-.alert-box {
-  position: fixed;
-/*   min-width: 300px; */
-  min-width: 400px;
-  top: -99%;
-  left: 50%;
-  transform: translateX(-50%);
-  padding: 15px 20px;
-  z-index: 999;
-  height: 70px;
-
-  border-radius: 0.25em;
-  box-shadow: 0px 0px 80px 0px rgba(0, 0, 0, 0.1);
-  /*padding: 1.25em;*/
-  background-color: white;
-  transition: all 0.3s;
-  overflow: hidden;
-  transition: all 0.5s;
-}
-.alert-box div[class*='col'] {
-  display: flex;
-  align-items: center;
-  height: 100%;
-  color: #5d5d5d;
-}
-.alert-box .alert-close {
-  justify-content: center;
-}
-.alert-box .alert-close i {
-  color: #f5473a;
-  cursor: pointer;
-}
-#section-comingsoon {
-  width: 100%;
-  height: 100vh;
-  background-color: #f8f8f8;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  position: relative;
-}
-.comingsoon-frame h1 {
-  font-size: 2rem;
-  text-align: center;
-}
-.comingsoon-frame p {
-  font-size: 1rem;
-  margin-top: 10px;
-  text-align: center;
-}
-.back-to-home {
-  position: absolute;
-  bottom: 20%;
-}
-.back-to-home button a {
-  color: #5d5d5d;
+  .alert-box {
+    min-width: 90%;
+  }
 }
