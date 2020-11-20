@@ -118,18 +118,18 @@ function changeCategory(obj, category) {
   $('.' + buttonType[1] + '').addClass('active');
 }
 
-// setTimeout(function () {
-//     $(".alert-box").css({
-//         "top": "5%"
-//     });
-// }, 2000);
-// setTimeout(function () {
-//     $(".alert-box").css({
-//         "top": "-99%"
-//     });
-// }, 10000);
-// $(".alert-close").click(function () {
-//     $(".alert-box").css({
-//         "top": "-99%"
-//     });
-// })
+setTimeout(function () {
+    $(".alert-box").css({
+        "top": "5%"
+    });
+}, 2000);
+setTimeout(function () {
+    $(".alert-box").css({
+        "top": "-99%"
+    });
+}, 10000);
+$(".alert-close").click(function () {
+    $(".alert-box").css({
+        "top": "-99%"
+    });
+})
