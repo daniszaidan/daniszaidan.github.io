@@ -1501,7 +1501,8 @@ img.mfp-img {
 
 .alert-box {
   position: fixed;
-  min-width: 300px;
+/*   min-width: 300px; */
+  min-width: 400px;
   top: -99%;
   left: 50%;
   transform: translateX(-50%);
